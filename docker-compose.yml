@@ -216,6 +216,9 @@ services:
     depends_on:
       - bind
 
+    ports:
+      # Expose Laravel dump server
+      - '9912:9912'
 
   # ------------------------------------------------------------
   # Web Server
